@@ -1,0 +1,6 @@
+components = {"Final" : .40, "Midterms" : .40, "Homework" : .20}
+my_status = {"Final" : 93, "Midterms" : 91, "Homework" : 99}
+def grade_calculator(proportions, my_grades):
+    return (components["Final"] * my_status["Final"]) + (components["Midterms"] * my_status["Midterms"]) + (components["Homework"] * my_status["Homework"])
+
+print(grade_calculator(components, my_status))
